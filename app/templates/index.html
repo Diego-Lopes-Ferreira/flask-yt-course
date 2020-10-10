@@ -1,0 +1,76 @@
+{% extends 'base.html' %}
+
+{% block styles %}
+<link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+{% endblock %}
+
+{% block content %}
+<aside class="sidebar-wrapper">
+  <div class="up">
+    <section class="sidebar-group">
+      <span>TT icon</span>
+    </section>
+    <section class="sidebar-group">
+      <a class="sidebar-group-item" href="#">
+        <span>icon</span>
+        <p>Home</p>
+      </a>
+      <a class="sidebar-group-item" href="#">
+        <span>icon</span>
+        <p>Explore</p>
+      </a>
+      <a class="sidebar-group-item" href="#">
+        <span>icon</span>
+        <p>Notifications</p>
+      </a>
+      <a class="sidebar-group-item" href="#">
+        <span>icon</span>
+        <p>Messages</p>
+      </a>
+      <a class="sidebar-group-item" href="#">
+        <span>icon</span>
+        <p>Bookmarks</p>
+      </a>
+      <a class="sidebar-group-item" href="#">
+        <span>icon</span>
+        <p>Lists</p>
+      </a>
+      <a class="sidebar-group-item" href="#">
+        <span>icon</span>
+        <p>Profile</p>
+      </a>
+      <a class="sidebar-group-item" href="#">
+        <span>icon</span>
+        <p>More</p>
+      </a>
+
+      <button class="btn btn-success twitter-btn" type="submit">Toulit</button>
+    </section>
+  </div>
+  <div class="down">
+    <section class="sidebar-group">
+      <p>nome</p>
+      <p>username</p>
+    </section>
+  </div>
+</aside>
+<div class="jumbotron">
+  <h1>Touliter</h1>
+  <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, harum exercitationem? Ex
+    aperiam quae ducimus aut voluptatem, consequatur harum iste et, nobis rem laborum placeat, expedita animi
+    pariatur nihil accusamus.</p>
+  <p><a class="btn btn-lg btn-success" href="/login" role="button">Sign up today</a></p>
+</div>
+{% for i in range(123) %}
+<div class="post-wrapper">
+  <div class="up">
+    <h1>Name Lastname</h1>
+    <h3>@username</h3>
+  </div>
+  <div class="down">
+    <p>Content, Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor laboriosam a mollitia sint molestiae, ullam vel odio neque voluptatibus. Placeat voluptatem alias fugit vitae nemo. Dolore ipsum est asperiores sequi?</p>
+  </div>
+
+</div>
+{% endfor %}
+{% endblock %}

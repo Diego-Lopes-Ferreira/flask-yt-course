@@ -1,0 +1,67 @@
+{% extends 'base.html' %}
+<!--div class="bg-light border-right" id="sidebar-wrapper">
+    <div class="sidebar-heading">Start Bootstrap </div>
+    <div class="list-group list-group-flush">
+        <a href="#" class="list-group-item list-group-item-action bg-light">Dashboard</a>
+        <a href="#" class="list-group-item list-group-item-action bg-light">Shortcuts</a>
+        <a href="#" class="list-group-item list-group-item-action bg-light">Overview</a>
+        <a href="#" class="list-group-item list-group-item-action bg-light">Events</a>
+        <a href="#" class="list-group-item list-group-item-action bg-light">Profile</a>
+        <a href="#" class="list-group-item list-group-item-action bg-light">Status</a>
+    </div>
+</div-->
+<!--aside class="navbar navbar-expand-lg navbar-light bg-light -->
+{% block sidebar %}
+<aside class="bg-light border-right sidebar-wrapper">
+    <section>
+        <span>TT icon</span>
+    </section>
+    <section class="list-group list-group-flush">
+        <a class="list-group-item list-group-item-action bg-light" href="#">
+            <span>icon</span>
+            <p>Home</p>
+        </a>
+        <a class="list-group-item list-group-item-action bg-light" href="#">
+            <span>icon</span>
+            <p>Explore</p>
+        </a>
+        <a class="list-group-item list-group-item-action bg-light" href="#">
+            <span>icon</span>
+            <p>Notifications</p>
+        </a>
+        <a class="list-group-item list-group-item-action bg-light" href="#">
+            <span>icon</span>
+            <p>Messages</p>
+        </a>
+        <a class="list-group-item list-group-item-action bg-light" href="#">
+            <span>icon</span>
+            <p>Bookmarks</p>
+        </a>
+        <a class="list-group-item list-group-item-action bg-light" href="#">
+            <span>icon</span>
+            <p>Lists</p>
+        </a>
+        <a class="list-group-item list-group-item-action bg-light" href="#">
+            <span>icon</span>
+            <p>Profile</p>
+        </a>
+        <a class="list-group-item list-group-item-action bg-light" href="#">
+            <span>icon</span>
+            <p>More</p>
+        </a>
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Tweet</button>
+        </form>
+    </section>
+    <section>
+        {% if user %}
+        <p>{{ user }}</p>
+        <p>{{ user }}</p>
+        {% else %}
+        <p>nome</p>
+        <p>username</p>
+        {% endif %}
+    </section>
+</aside>
+{% endblock %}
