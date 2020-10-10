@@ -3,10 +3,14 @@ from flask import render_template
 
 from app.models.forms import TouliterLogin
 
-@theApp.route('/user/<user>')
-@theApp.route('/', defaults={"user": None})
-def index(user):
-    return render_template('index.html', user=user)
+@theApp.route('/index')
+@theApp.route('/')
+def index():
+    return render_template('index.html')
+
+@theApp.route('/home')
+def home():
+    return render_template('index.html')
 
 @theApp.route('/test/')
 @theApp.route('/test/<name>/')
