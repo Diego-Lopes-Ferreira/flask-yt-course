@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block styles %}
+<link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+{% endblock %}
+
+{% block content %}
+<div class="jumbotron">
+  <h1>Touliter</h1>
+  <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, harum exercitationem? Ex
+    aperiam quae ducimus aut voluptatem, consequatur harum iste et, nobis rem laborum placeat, expedita animi
+    pariatur nihil accusamus.</p>
+  <a class="btn btn-lg btn-success" href="/register" role="button">Sign up today</a>
+  <a class="btn btn-lg btn-outline-success" href="/login" role="button">log in</a>
+</div>
+{% endblock %}

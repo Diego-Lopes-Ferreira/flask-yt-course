@@ -1,0 +1,27 @@
+.wrapper {
+  height: 100vh;
+}
+.container {
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+.form {
+  max-width: 800px;
+}
+
+.form .row {
+  margin: 1rem 0 0 0;
+}
+
+.form-control {
+  height: 2rem;
+  padding: 0.25rem;
+  outline: none;
+  border: 0;
+  border-bottom: 1px solid var(--gray);
+  border-radius: 0;
+}
+.form-control:active, .form-control:hover, .form-control:focus {
+  outline: var(--gray);
+}
